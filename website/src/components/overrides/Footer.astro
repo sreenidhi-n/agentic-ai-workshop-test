@@ -1,11 +1,18 @@
 ---
-import type { Props } from '@astrojs/starlight/props';
+import type { Props } from "@astrojs/starlight/props";
+import Pagination from "@astrojs/starlight/components/Pagination.astro";
 ---
 
 <footer class="custom-footer">
+  <Pagination />
   <p>
     Built with <span class="heart">&hearts;</span> by
-    <a href="https://github.com/mkmurali" target="_blank" rel="noopener noreferrer">Murali</a>
+    <a
+      href="https://github.com/mkmurali"
+      target="_blank"
+      rel="noopener noreferrer">Murali</a
+    >
+    for Agentic π Day Workshop on 3/14/2026.
   </p>
 </footer>
 
@@ -16,6 +23,10 @@ import type { Props } from '@astrojs/starlight/props';
     border-top: 1px solid var(--sl-color-gray-5, #e2e2e2);
     font-size: 0.85rem;
     color: var(--sl-color-gray-3, #666);
+  }
+
+  .custom-footer p {
+    margin-top: 1.5rem;
   }
 
   .custom-footer .heart {
